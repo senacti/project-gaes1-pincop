@@ -16,6 +16,10 @@ La empresa de calzado PinCop, se dedica a la venta de tenis al por mayor y al de
 El sistema de información VT (Tenispincop) propuesto para la empresa PinCop apoya los registros, gestión de ventas, organización y control del material del stock, facilitando que se tenga una información precisa al generar informes, lo cuál será más fácil para el vendedor realizar una venta, el distribuidor lleva productos en consignación y se maneja un inventario de estos productos en consignación.
 
 ## ALCANCE
+El sistema de información (Tenispincop), abarca únicamente los módulos de ventas, pedidos, marketing e inventario.
+Con el sistema de información se pretende acceder y agregar fácilmente los datos de los usuarios de la empresa, tener un control sobre el inventario y los pedidos e impulsar las ventas ventas .
+Con el sistema de información no se podrán hacer domicilios pero si tener un control del mismo. 
+Tenispincop no va a interferir con los pagos a los vendedores.
 
 ## INTEGRANTES
 Michael Esteven Campos Leon
