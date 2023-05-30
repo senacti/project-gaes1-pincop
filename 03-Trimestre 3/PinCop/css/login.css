@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background:#333;
+}
+header{
+    height: 100vh;
+    background: #090909;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    z-index: 3;
+}
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50em;
+    background: linear-gradient(45deg,#060700,#9a1212);
+    width: 100%;
+    height: 120%;
+    transform: rotate(70deg);
+    z-index: -5;
+}
+.container{
+    max-width: 1212px;
+    padding: 1em 2em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+}
+.logo{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+* {
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    padding: 15px;
+}
+.formulario{
+    background: #00000000;
+    margin-top: 150px;
+    padding: 3px;
+}
+h1{
+    text-align: center;
+    color: #f9f9f9;
+    font-size: 40px;
+}
+
+input[type="email"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    text-align:left;
+    color:white;
+}
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #ffffff;
+}
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+.button{
+    border: none;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background:  #9a1212;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    box-shadow: 0 0 20px 20px rgba(99, 12, 12, 0.5) inset;
+}
+p{
+    text-align: center;
+    color:rgb(255, 255, 255);
+}
+.link{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+.link:hover{
+     color: #9a1212;
+}
+@media(min-width:768px)
+{
+    .formulario{
+        max-width: 550px;
+        margin: auto;
+        padding: 10px;
+    }
+}
+
+.formulario__mensaje{
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: auto;
+}
+@media screen and (max-width: 800px) {
+    
+    .formulario__mensaje{
+		grid-column: 1;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
