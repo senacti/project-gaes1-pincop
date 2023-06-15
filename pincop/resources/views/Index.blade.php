@@ -29,7 +29,7 @@
                                 <a href="{{url('/mujer')}}">Mujer</a>
                             </li>
                             <li>
-                                <a href="{{url('/niño')}}">Niños</a>
+                                <a href="{{url('/nino')}}">Niños</a>
                             </li>
                         </ul>
                         <form>

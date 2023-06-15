@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Registrarse - TenisPincop</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
-	<link rel="stylesheet" href="../css/registro.css">
+	<link rel="stylesheet" href="{{ asset('css/registro.css') }}">
 	<link rel="icon" href= {{ asset('img/logo.png') }}>
 </head>
 <body>
@@ -96,7 +96,7 @@
 		</form>
 	</main>
 </header>
-	<script src="../js/registro.js"></script>
+	<script  src={{ asset('js/registro.js') }}></script>
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 </html>

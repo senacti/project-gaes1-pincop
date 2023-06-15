@@ -45,8 +45,8 @@ Route::get('/mujer', function () {
     return view ('mujer');
 });
 
-Route::get('/niño', function () {
-    return view ('niño');
+Route::get('/nino', function () {
+    return view ('nino');
 });
 
 Route::get('/nuevo', function () {

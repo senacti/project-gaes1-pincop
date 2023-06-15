@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recuperar Contraseña - TenisPincop</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
-	<link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
     <link rel="icon" href= {{ asset('img/logo.png') }}>
 </head>  
 
@@ -35,7 +35,7 @@
             </div>
         </form>
     </header>
-    <script src="../js/rolre.js"></script>
-    <script src="../js/recuperar.js"></script>
+    <script  src={{ asset('js/rolre.js') }}></script>
+    <script  src={{ asset('js/recuperar.js') }}></script>
 </body>
 </html>
