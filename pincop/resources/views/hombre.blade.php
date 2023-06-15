@@ -53,25 +53,25 @@
                 <div class="contenedor-items">
                     <div class="item">
                         <span class="titulo-item">Nike Air Max 90 SE</span>
-                        <img src="../img/Productos/nikecafe.png" alt="" class="img-item">
+                        <img src="{{ asset ('img/Productos/nikecafe.png') }}" alt="" class="img-item">
                         <span class="precio-item">$150.000</span>
                         <button class="boton-item">Agregar al Carrito</button>
                     </div>
                     <div class="item">
                         <span class="titulo-item">Nike City Rep TR</span>
-                        <img src="../img/Productos/nikebl.png" alt="" class="img-item">
+                        <img src="{{ asset ('img/Productos/nikebl.png') }}" alt="" class="img-item">
                         <span class="precio-item">$200.000</span>
                         <button class="boton-item">Agregar al Carrito</button>
                     </div>
                     <div class="item">
                         <span class="titulo-item">ADI2000</span>
-                        <img src="../img/Productos/adi2000..png" alt="" class="img-item">
+                        <img src="{{ asset ('img/Productos/adi2000..png') }}" alt="" class="img-item">
                         <span class="precio-item">$180.000</span>
                         <button class="boton-item">Agregar al Carrito</button>
                     </div>
                     <div class="item">
                         <span class="titulo-item">Adidas Nucombe</span>
-                        <img src="../img/Productos/nucombe..png" alt="" class="img-item">
+                        <img src="{{ asset ('img/Productos/nucombe..png') }}" alt="" class="img-item">
                         <span class="precio-item">$250.000</span>
                         <button class="boton-item">Agregar al Carrito</button>
                     </div>

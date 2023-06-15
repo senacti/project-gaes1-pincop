@@ -53,25 +53,25 @@
                 <div class="contenedor-items">
                     <div class="item">
                         <span class="titulo-item">Nike Air Max 270</span>
-                        <img src="../img/Productos/air rosado.png" alt="" class="img-item">
+                        <img src="{{ asset ('img/Productos/air rosado.png') }}" alt="" class="img-item">
                         <span class="precio-item">$150.000</span>
                         <button class="boton-item">Agregar al Carrito</button>
                     </div>
                     <div class="item">
                         <span class="titulo-item">Nike Blazer Mid '77 Vintage</span>
-                        <img src="../img/Productos/nike us.png" alt="" class="img-item">
+                        <img src="{{ asset ('img/Productos/nike us.png') }}" alt="" class="img-item">
                         <span class="precio-item">$200.000</span>
                         <button class="boton-item">Agregar al Carrito</button>
                     </div>
                     <div class="item">
                         <span class="titulo-item">Adidas Grand Court TD</span>
-                        <img src="../img/Productos/adm.png" alt="" class="img-item">
+                        <img src="{{ asset ('img/Productos/adm.png') }}" alt="" class="img-item">
                         <span class="precio-item">$180.000</span>
                         <button class="boton-item">Agregar al Carrito</button>
                     </div>
                     <div class="item">
                         <span class="titulo-item">Adidas Forum 84 Low</span>
-                        <img src="../img/Productos/admr.png" alt="" class="img-item">
+                        <img src="{{ asset ('img/Productos/admr.png') }}" alt="" class="img-item">
                         <span class="precio-item">$250.000</span>
                         <button class="boton-item">Agregar al Carrito</button>
                     </div>
