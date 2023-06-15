@@ -7,7 +7,7 @@
     <title>Página Administrador - TenisPincop</title>
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href= {{ asset('img/tenis ° pin.png') }}>
+    <link rel="icon" href= {{ asset('img/logo.png') }}>
     <script src="https://kit.fontawesome.com/ea1a71fcbb.js" crossorigin="anonymous"></script>
 </head>
 

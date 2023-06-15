@@ -7,7 +7,7 @@
     <title>Recuperar Contraseña - TenisPincop</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
 	<link rel="stylesheet" href="../css/login.css">
-    <link rel="icon" href="../img/tenis ° pin.png">
+    <link rel="icon" href= {{ asset('img/logo.png') }}>
 </head>  
 
 <body>
