@@ -41,7 +41,7 @@
                                 <input type="text"
                                 class="buscar"
                                 placeholder="Buscar..."><!--lo que va por dentro de la barra de busqueda-->
-                                <a href="{{url('/inicio')}}" class="nav-btn"><i class="fa-solid fa-user"></i></a><!--icono de Usuario-->                               
+                                <a href="{{url('/login')}}" class="nav-btn"><i class="fa-solid fa-user"></i></a><!--icono de Usuario-->                               
                             </form>
                         </div>
                     </div>

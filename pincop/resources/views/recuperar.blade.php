@@ -31,7 +31,7 @@
                         
                 <input type="button" value="Enviar Correo" class="button">
                 <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Correo enviado exitosamente!</p>
-                <p><a class="link" href="{{url('/inicio')}}"> Volver</a></p>
+                <p><a class="link" href="{{url('/login')}}"> Volver</a></p>
             </div>
         </form>
     </header>

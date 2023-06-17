@@ -83,7 +83,7 @@
 			<div class="formulario__grupo formulario__grupo-btn-enviar">
 				<button type="submit" class="formulario__btn">Enviar</button>
 				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
-                <p>¿Ya tienes una cuenta?<a class="link" href="{{url('/inicio')}}"> Iniciar Sesión</a></p>
+                <p>¿Ya tienes una cuenta?<a class="link" href="{{url('/login')}}"> Iniciar Sesión</a></p>
 			</div>
 		</form>
 	</main>
