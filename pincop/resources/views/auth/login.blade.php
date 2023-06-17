@@ -1,55 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Laravel 10 Custom User Registration & Login Tutorial - AllPHPTricks.com</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-</head>
+	<meta charset="UTF-8">
+	<title>Iniciar Sesión - TenisPincop</title> 
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+	<link rel="icon" href= {{ asset('img/logo.png') }}>
+</head>  
+
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-light">
+    <header>
         <div class="container">
-          <a class="navbar-brand" href="{{ URL('/') }}">Custom Login Register</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-                @guest
-                    <li class="nav-item">
-                        <a class="nav-link {{ (request()->is('login')) ? 'active' : '' }}" href="{{ route('login') }}">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ (request()->is('register')) ? 'active' : '' }}" href="{{ route('register') }}">Register</a>
-                    </li>
-                @else    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            {{ Auth::user()->name }}
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('logout') }}"
-                            onclick="event.preventDefault();
-                            document.getElementById('logout-form').submit();"
-                            >Logout</a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST">
-                                @csrf
-                            </form>
-                        </li>
-                        </ul>
-                    </li>
-                @endguest
-            </ul>
-          </div>
+            <h2><a class="logo" href="{{url('/')}}"><< Pincop</a></h2>
         </div>
-    </nav>    
-
-    <div class="container">
-        @yield('content')
-    </div>
-       
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>    
+       <form class="formulario">
+    
+            <h1>Iniciar Sesión</h1>
+             <div class="contenedor">
+             
+                <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="email" placeholder="Correo Electronico" id="correo"> 
+                </div>
+                 
+                <div class="input-contenedor">
+                <i class="fas fa-key icon"></i>
+                <input type="password" placeholder="Contraseña" id="contraseña">
+                 
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                </div>
+                
+                </div>
+                <input type="button" value="Ingresar" class="button">
+                <p>¿No tienes una cuenta? <a class="link" href="{{url('/register')}}">Registrate </a></p>
+                <p><a class="link" href="{{url('/recuperar')}}">¿Olvidaste tu contraseña?</a></p>
+            </div>
+        </form>
+    </header>
+    <script  src={{ asset('js/login.js') }}></script>
 </body>
 </html>
+

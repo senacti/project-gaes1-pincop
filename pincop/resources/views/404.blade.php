@@ -23,7 +23,7 @@
                             <div class="msg">OH!<span class="triangle"></span></div>
                         </div>
                         <h2 class="h1">¡Lo siento! Página no encontrada</h2>
-                        <h5><center><a href="{{url('/home')}}" class="boton">Volver atras</a></center></h5>
+                        <h5><center><a href="{{url('/')}}" class="boton">Volver atras</a></center></h5>
                     </div>
                 </div>
             </div>
