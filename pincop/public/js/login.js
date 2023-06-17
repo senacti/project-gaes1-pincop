@@ -20,15 +20,3 @@ function iniciarsesion(){
         }, 5000);
     }
 }
-
-function ingresar(){
-    var rol = sessionStorage.getItem('rolusuarioActivo');
-    switch(rol){
-        case '1':
-            window.location.href = '/dashboard';
-        break;
-        case '2':
-            window.location.href = '/';
-        break;
-    }
-}

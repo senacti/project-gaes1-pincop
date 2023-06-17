@@ -147,7 +147,7 @@ input[type="number"] {
 	margin-right: 10px;
 }
 
-.formulario__grupo-terminos,
+
 .formulario__mensaje,
 .formulario__grupo-btn-enviar {
 	grid-column: span 2;

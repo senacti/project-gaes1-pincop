@@ -39,7 +39,7 @@
                             <!--sirve para poder colocar la barra de busqueda-->
                             <input type="text" class="buscar" placeholder="Buscar..."><!--lo que va por dentro de la barra de busqueda-->
                             <a href="{{url('/500')}}" class="nav-btn"><i class="fas fa-cart-plus"></i></a><!--icono del carrito de compras-->
-                            <a href="{{url('/inicio')}}" class="nav-btun"><i class="fa-solid fa-user"></i></a><!--icono de Usuario-->
+                            <a href="{{url('/login')}}" class="nav-btun"><i class="fa-solid fa-user"></i></a><!--icono de Usuario-->
                         </form>
                     </div>
                 </div>
