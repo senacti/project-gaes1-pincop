@@ -68,3 +68,6 @@ Route::get('/500', function () {
 Route::get('/500d', function () {
     return view ('500d');
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -35,7 +35,6 @@
             </div>
         </form>
     </header>
-    <script  src={{ asset('js/rolre.js') }}></script>
     <script  src={{ asset('js/recuperar.js') }}></script>
 </body>
 </html>

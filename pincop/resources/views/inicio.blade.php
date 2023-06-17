@@ -39,7 +39,6 @@
             </div>
         </form>
     </header>
-    <script  src={{ asset('js/rol.js') }}></script>
     <script  src={{ asset('js/login.js') }}></script>
 </body>
 </html>
