@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="container">
-            <h2><a class="logo" href="{{url('/')}}"><< Pincop</a></h2>
+            <h2><a class="logo" href="{{url('/')}}">Pincop</a></h2>
         </div>
         <form class="formulario">
     
