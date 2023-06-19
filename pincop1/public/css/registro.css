@@ -14,7 +14,7 @@ header {
     z-index: 1;
 }
 
-header::before {
+header:before {
     content: '';
     position: absolute;
     top: 0;
@@ -25,21 +25,25 @@ header::before {
     transform: rotate(70deg);
     z-index: -5;
 }
-h1{
+
+h1 {
     text-align: center;
     color: #f9f9f9;
     font-size: 40px;
 }
-.logo{
+
+.logo {
     text-decoration: none;
     color: #fff;
     cursor: pointer;
 }
-* {
+
+input {
     box-sizing: border-box;
     background-color: transparent;
     border-color: #fff;
 }
+
 .container {
     max-width: 400px;
     margin: 0 auto;
@@ -57,7 +61,7 @@ h1{
 form {
     max-width: 550px;
     margin: auto;
-    padding: 10px; 
+    padding: 10px;
 }
 
 label {
@@ -65,15 +69,17 @@ label {
     margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+input[type=text],
+input[type=email],
+input[type=password] {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 20px;
 }
 
-button[type="submit"] {
+button[type=submit] {
     background: #9a1212;
     color: #fff;
     padding: 15px 20px;
@@ -84,7 +90,7 @@ button[type="submit"] {
     font-size: 20px;
 }
 
-button[type="submit"]:hover {
+button[type=submit]:hover {
     box-shadow: 0 0 20px 20px rgba(99, 12, 12, 0.5) inset;
 }
 
@@ -103,19 +109,57 @@ button[type="submit"]:hover {
     grid-template-columns: 1fr 6fr;
     align-items: center;
 }
-main{
-	width: 100%;
+
+main {
+    width: 100%;
     padding: 0px;
 }
-p{
+
+p {
     text-align: center;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
-.link{
+
+.link {
     text-decoration: none;
     color: #ffffff;
     font-weight: 600;
 }
-.link:hover{
-     color: #9a1212;
+
+.link:hover {
+    color: #9a1212;
+}
+
+/* Estilos del formulario */
+.formulario__grupo {
+    position: relative;
+}
+
+.formulario__grupo i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 20px;
+}
+
+.formulario__grupo-correcto i {
+    color: #28a745;
+}
+
+.formulario__grupo-incorrecto i {
+    color: #dc3545;
+}
+
+.formulario__input-error {
+    display: none;
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.formulario__grupo-incorrecto .formulario__input-error {
+    display: block;
 }

@@ -1,24 +1,70 @@
-document.getElementById("registerButton").addEventListener("click", function(event) {
-  event.preventDefault();
+function validarFormulario() {
+  var name = document.getElementById('name');
+  var email = document.getElementById('email');
+  var password = document.getElementById('password');
+  var passwordConfirmation = document.getElementById('password_confirmation');
+  var errorMessage = document.getElementById('error-message');
 
-  // Realiza las validaciones necesarias antes de enviar el formulario
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var password = document.getElementById("password").value;
-  var confirmPassword = document.getElementById("password_confirmation").value;
+  errorMessage.style.display = 'none';
 
-  // Validar que todos los campos estén completos
-  if (name === "" || email === "" || password === "" || confirmPassword === "") {
-      alert("Por favor, completa todos los campos.");
-      return;
+  if (name.value.trim() === '') {
+      mostrarError(name, 'El nombre es requerido');
+      return false;
+  } else {
+      mostrarExito(name);
   }
 
-  // Validar que la contraseña coincida con la confirmación
-  if (password !== confirmPassword) {
-      alert("Las contraseñas no coinciden.");
-      return;
+  if (email.value.trim() === '') {
+      mostrarError(email, 'El email es requerido');
+      return false;
+  } else {
+      mostrarExito(email);
   }
 
-  // Envía el formulario
-  document.querySelector("form").submit();
-});
+  if (password.value.trim() === '') {
+      mostrarError(password, 'La contraseña es requerida');
+      return false;
+  } else {
+      mostrarExito(password);
+  }
+
+  if (passwordConfirmation.value.trim() === '') {
+      mostrarError(passwordConfirmation, 'Debe confirmar la contraseña');
+      return false;
+  } else if (password.value !== passwordConfirmation.value) {
+      mostrarError(passwordConfirmation, 'Las contraseñas no coinciden');
+      return false;
+  } else {
+      mostrarExito(passwordConfirmation);
+  }
+
+  return true;
+}
+
+function mostrarError(input, mensaje) {
+  var grupo = input.parentElement;
+  var iconoExito = grupo.querySelector('.fa-check-circle');
+  var iconoError = grupo.querySelector('.fa-times-circle');
+  var mensajeError = grupo.querySelector('.formulario__input-error');
+
+  grupo.classList.add('formulario__grupo-incorrecto');
+  grupo.classList.remove('formulario__grupo-correcto');
+  iconoExito.style.display = 'none';
+  iconoError.style.display = 'block';
+  mensajeError.textContent = mensaje;
+  mensajeError.style.display = 'block';
+}
+
+function mostrarExito(input) {
+  var grupo = input.parentElement;
+  var iconoExito = grupo.querySelector('.fa-check-circle');
+  var iconoError = grupo.querySelector('.fa-times-circle');
+  var mensajeError = grupo.querySelector('.formulario__input-error');
+
+  grupo.classList.remove('formulario__grupo-incorrecto');
+  grupo.classList.add('formulario__grupo-correcto');
+  iconoExito.style.display = 'block';
+  iconoError.style.display = 'none';
+  mensajeError.textContent = '';
+  mensajeError.style.display = 'none';
+}

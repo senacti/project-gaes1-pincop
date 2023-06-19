@@ -13,42 +13,44 @@
         <div class="container">
             <h2><a class="logo" href="{{url('/')}}">Pincop</a></h2>
         </div>
-    
     <main>
         <h1>Registrate</h1>
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
-        <form method="POST" action="{{ route('register') }}">
+        <div id="error-message" class="alert alert-danger" style="display: none;"></div>
+        <form method="POST" action="{{ route('register') }}" id="formulario" onsubmit="return validarFormulario()">
             @csrf
-            <div>
+            <div class="formulario__grupo" id="grupo__name">
                 <label for="name">Nombre</label>
                 <input type="text" name="name" id="name" value="{{ old('name') }}" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-times-circle"></i>
+                <div class="formulario__input-error">Mensaje de error</div>
             </div>
-            <div>
+            <div class="formulario__grupo" id="grupo__email">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" value="{{ old('email') }}" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-times-circle"></i>
+                <div class="formulario__input-error">Mensaje de error</div>
             </div>
-            <div>
+            <div class="formulario__grupo" id="grupo__password">
                 <label for="password">Contraseña</label>
                 <input type="password" name="password" id="password" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-times-circle"></i>
+                <div class="formulario__input-error">Mensaje de error</div>
             </div>
-            <div>
+            <div class="formulario__grupo" id="grupo__password_confirmation">
                 <label for="password_confirmation">Repetir Contraseña</label>
                 <input type="password" name="password_confirmation" id="password_confirmation" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-times-circle"></i>
+                <div class="formulario__input-error">Mensaje de error</div>
             </div>
             <button type="submit">Enviar</button>
-			<p>¿Ya tienes una cuenta?<a class="link" href="{{url('/login')}}"> Iniciar Sesión</a></p>
+            <p>¿Ya tienes una cuenta?<a class="link" href="{{url('/login')}}"> Iniciar Sesión</a></p>
         </form>
     </main>
 </header>
     <script src="{{ asset('js/registro.js') }}"></script>
 </body>
 </html>
-
