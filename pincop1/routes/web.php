@@ -22,10 +22,6 @@ Route::get('/inventario', function () {
     return view ('inventario');
 });
 
-Route::get('/dashboard', function () {
-    return view ('dashboard');
-});
-
 Route::get('/hombre', function () {
     return view ('hombre');
 });

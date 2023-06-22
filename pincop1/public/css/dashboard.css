@@ -25,10 +25,11 @@ h3{
 }
 .btn{
     background: #9a1212;
-    color: #060700;
+    color: #ffffff;
     padding: 5px 10px;
     text-align: center;
     font-size: 15px;
+    border-radius: 10em;
 }
 .btn .hoover{
     position: fixed;
@@ -242,4 +243,12 @@ th,td{
     .container .content .content-2 .recent-payment table td:nth-child(2){
         display: none;
     }
+}
+.dropdown-item {
+    background: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5em;
 }

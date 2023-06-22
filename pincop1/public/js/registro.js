@@ -65,8 +65,8 @@ function validarPassword(password) {
   if (password.value.trim() === '') {
     mostrarError(password, 'La contraseña es requerida');
     return false;
-  } else if (!/^.{4,12}$/.test(password.value.trim())) {
-    mostrarError(password, 'La contraseña debe tener entre 4 y 12 caracteres');
+  } else if (!/^.{8,12}$/.test(password.value.trim())) {
+    mostrarError(password, 'La contraseña debe tener entre 8 y 12 caracteres');
     return false;
   } else {
     mostrarExito(password);

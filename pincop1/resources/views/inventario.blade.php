@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="container">
-            <h2><a class="logo" href="{{url('/dashboard')}}"><< Dashboard</a></h2>
+            <h2><a class="logo" href="{{url('/home')}}"><< Dashboard</a></h2>
             <h1>Inventario</h1>
         </div>
     
