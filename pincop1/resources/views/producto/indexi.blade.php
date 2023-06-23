@@ -40,7 +40,16 @@
                         <td> {{$producto->categoria}} </td>
                         <td> {{$producto->descripcion}} </td>
                         <td> ${{$producto->precio}} </td>
+                        <td>
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#edit{{$producto->id}}">
+                                Editar
+                              </button>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete{{$producto->id}}">
+                                Eliminar
+                              </button>
+                        </td>
                     </tr>
+                    @include('producto.info')
                     @endforeach
                 </tbody>
             </table>

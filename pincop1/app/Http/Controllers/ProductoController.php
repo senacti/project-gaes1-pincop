@@ -52,7 +52,7 @@ class ProductoController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Producto $producto)
+    public function edit($id)
     {
         //
     }
@@ -60,16 +60,27 @@ class ProductoController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Producto $producto)
+    public function update(Request $request, $id)
     {
-        //
+        $productos=Producto::find($id);
+        $productos->nombre=$request->input('nombre');
+        $productos->marca=$request->input('marca');
+        $productos->talla=$request->input('talla');
+        $productos->cantidad=$request->input('cantidad');
+        $productos->categoria=$request->input('categoria');
+        $productos->descripcion=$request->input('descripcion');
+        $productos->precio=$request->input('precio');
+        $productos->update();
+        return redirect()->back();
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Producto $producto)
+    public function destroy($id)
     {
-        //
+        $productos=Producto::find($id);
+        $productos->delete();
+        return redirect()->back();
     }
 }
