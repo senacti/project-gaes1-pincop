@@ -13,7 +13,7 @@ Ejecutar las funciones de administrador, para la gestión del sistema.
 La empresa de calzado PinCop, se dedica a la venta de tenis al por mayor y al detal, el problema que esta enfrenta es cómo mejorar la gestión de su inventario para evitar la acumulación excesiva de stock y garantizar que los niveles de inventario correspondan con las ventas. La empresa necesita determinar si el problema se debe a una falta con los problemas en la cadena de suministro, una gestión ineficiente del inventario o una combinación de estos factores. Además, PinCop deberá encontrar formas de optimizar su inventario y reducir los costos asociados con el almacenamiento y la gestión del stock.  
 
 ## JUSTIFICACION 🗣
-El sistema de información VT (Tenispincop) propuesto para la empresa PinCop apoya los registros, gestión de ventas, organización y control del material del stock, facilitando que se tenga una información precisa al generar informes, lo cuál será más fácil para el vendedor realizar una venta, el distribuidor lleva productos en consignación y se maneja un inventario de estos productos en consignación.
+PinCop se justifica por la creciente demanda de calzado online, la conveniencia para los consumidores, la posibilidad de llegar a un mercado global, la variedad de productos, la mejora en la experiencia de compra, las estrategias de marketing digital. Estos factores combinados tienen como objetivo establecer una tienda de calzado online exitosa y rentable.
 
 ## ALCANCE 🐾
 El sistema de información (Tenispincop), abarca únicamente los módulos de ventas, pedidos, marketing e inventario.
