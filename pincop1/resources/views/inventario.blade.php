@@ -17,6 +17,10 @@
 
 <body>
     <header>
+        <div class="container">
+            <h3><a class="logo" href="{{url('/home')}}">Dashboard</a></h3>
+            <h1>Inventario</h1>
+        </div>
         @yield('content')
     </header>
   <!-- Bootstrap JavaScript Libraries -->
