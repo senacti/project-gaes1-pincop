@@ -29,7 +29,16 @@ class ProductoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $productos=new Producto;
+        $productos->nombre=$request->input('nombre');
+        $productos->marca=$request->input('marca');
+        $productos->talla=$request->input('talla');
+        $productos->cantidad=$request->input('cantidad');
+        $productos->categoria=$request->input('categoria');
+        $productos->descripcion=$request->input('descripcion');
+        $productos->precio=$request->input('precio');
+        $productos->save();
+        return redirect()->back();
     }
 
     /**

@@ -7,30 +7,45 @@
 <div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8">
+        <br><br>
+        <h1>Inventario</h1>
+        <br><br>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create">
+            Nuevo
+          </button>
         <div class="table-responsive">
-            <table class="table table-primary">
-                <thead>
+            <br>
+            <table class="table">
+                <thead class="bg-danger text-white">
                     <tr>
-                        <th scope="col">Column 1</th>
-                        <th scope="col">Column 2</th>
-                        <th scope="col">Column 3</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Talla</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Precio</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="">
-                        <td scope="row">R1C1</td>
-                        <td>R1C2</td>
-                        <td>R1C3</td>
+                    @foreach ($productos as $producto)
+                    <tr class="bg-light text-black">
+                        <td scope="row"> {{$producto->id}} </td>
+                        <td> {{$producto->nombre}} </td>
+                        <td> {{$producto->marca}} </td>
+                        <td> {{$producto->talla}} </td>
+                        <td> {{$producto->cantidad}} </td>
+                        <td> {{$producto->categoria}} </td>
+                        <td> {{$producto->descripcion}} </td>
+                        <td> ${{$producto->precio}} </td>
                     </tr>
-                    <tr class="">
-                        <td scope="row">Item</td>
-                        <td>Item</td>
-                        <td>Item</td>
-                    </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>
-        
+        @include('producto.create')
     </div>
     <div class="col-md-2"></div>
 </div>
