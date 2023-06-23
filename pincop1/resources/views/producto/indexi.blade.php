@@ -3,7 +3,11 @@
 
 @section('content')
 
-
+<link rel="stylesheet" href="{{ asset('css/inventario.css') }}">
+<br><br>
+<div class="container">
+    <h3><a class="logo" href="{{url('/home')}}">Dashboard</a></h3>
+</div>
 <div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8">
@@ -24,7 +28,7 @@
                         <th scope="col">Talla</th>
                         <th scope="col">Cantidad</th>
                         <th scope="col">Categoria</th>
-                        <th scope="col">Descripcion</th>
+                        <th scope="col">Descripción</th>
                         <th scope="col">Precio</th>
                         <th>Acciones</th>
                     </tr>
