@@ -17,12 +17,11 @@
             <a href="{{url('/')}}"><h2>Pincop</h2></a>
         </div>
         <ul>
-            <a href="{{url('/404d')}}"><li><i class="fa-solid fa-chart-line icon"></i>&nbsp; <span>Dashboard</span></li></a>
             <a href="{{url('/404d')}}"><li><i class="fa-sharp fa-solid fa-bars icon"></i>&nbsp; <span>Menu</span></li></a>
             <a href="{{url('/inventario')}}"><li><i class="fa-solid fa-pager icon"></i>&nbsp; <span>Inventario</span></li></a>
-            <a href="{{url('/404d')}}"><li><i class="fa-solid fa-screwdriver-wrench icon"></i>&nbsp; <span>Utilidades</span></li></a>
-            <a href="{{url('/404d')}}"><li><i class="fa-solid fa-user-gear"></i>&nbsp; <span>Perfil Administrador</span></li></a>
-            <a href="{{url('/404d')}}"><li><i class="fa-solid fa-user-tie icon "></i>&nbsp; <span>Proveedores</span></li></a>
+            <a href="{{url('/404d')}}"><li><i class="fa-solid fa-chart-line icon"></i>&nbsp; <span>Marketing</span></li></a>
+            <a href="{{url('/404d')}}"><li><i class="fa-solid fa-truck-fast"></i>&nbsp; <span>Pedidos</span></li></a>
+            <a href="{{url('/404d')}}"><li><i class="fa-solid fa-sack-dollar"></i>&nbsp; <span>Ventas</span></li></a>
             <a href="{{url('/404d')}}"><li><i class="fa-solid fa-user icon"></i>&nbsp; <span>Usuarios</span></li></a>
             <a href="{{url('/404d')}}"><li><i class="fa-solid fa-gear icon"></i>&nbsp; <span>Ajustes</span></li></a>
         </ul>
