@@ -37,7 +37,7 @@
               class="form-control" name="categoria" id="" aria-describedby="helpId" placeholder="">
           </div>
           <div class="mb-3">
-            <label for="" class="form-label">Descripcion</label>
+            <label for="" class="form-label">Descripción</label>
             <input type="text"
               class="form-control" name="descripcion" id="" aria-describedby="helpId" placeholder="">
           </div>

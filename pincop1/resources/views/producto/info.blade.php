@@ -38,7 +38,7 @@
               class="form-control" name="categoria" id="" aria-describedby="helpId" placeholder="" value="{{$producto->categoria}}">
           </div>
           <div class="mb-3">
-            <label for="" class="form-label">Descripcion</label>
+            <label for="" class="form-label">Descripción</label>
             <input type="text"
               class="form-control" name="descripcion" id="" aria-describedby="helpId" placeholder="" value="{{$producto->descripcion}}">
           </div>
@@ -56,3 +56,39 @@
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="delete{{$producto->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Eliminar Producto</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <form action="{{route('inventario.destroy',$producto->id)}}" method="post" enctype="multipart/form-data">
+                @csrf
+                @method('DELETE')
+            <div class="modal-body">
+              <div class="mb-3">
+                Estás seguro de eliminar a <strong> {{$producto->nombre}} ?</strong>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="submit" class="btn btn-primary">Confirmar</button>
+            </div>
+        </form>
+          </div>
+        </div>
+      </div>
