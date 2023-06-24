@@ -17,6 +17,7 @@
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create">
             Nuevo
           </button>
+        <a href="{{route('inventario.pdf')}}" class="btn btn success" target="_blank">PDF</a>
         <div class="table-responsive">
             <br>
             <table class="table">
