@@ -4,6 +4,7 @@
 @section('content')
 
 <link rel="stylesheet" href="{{ asset('css/inventario.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 <br><br>
 <div class="container">
     <h3><a class="logo" href="{{url('/home')}}">Dashboard</a></h3>
@@ -14,14 +15,16 @@
         <br><br>
         <h1>Inventario</h1>
         <br><br>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create">
-            Nuevo
+        <button type="button" class="nuevo" data-toggle="modal" data-target="#create">
+            <i class="fas fa-plus"></i> Nuevo
           </button>
-        <a href="{{route('inventario.pdf')}}" class="btn btn success" target="_blank">PDF</a>
+          <a href="{{route('inventario.pdf')}}" class="pdf" target="_blank">
+            <i class="fas fa-file-pdf"></i> PDF
+          </a>          
         <div class="table-responsive">
             <br>
             <table class="table">
-                <thead class="bg-danger text-white">
+                <thead class="cabezera">
                     <tr>
                         <th scope="col">ID</th>
                         <th scope="col">Nombre</th>
@@ -46,11 +49,11 @@
                         <td> {{$producto->descripcion}} </td>
                         <td> ${{$producto->precio}} </td>
                         <td>
-                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#edit{{$producto->id}}">
-                                Editar
+                            <button type="button" class="editar" data-toggle="modal" data-target="#edit{{$producto->id}}">
+                                <i class="fas fa-edit"></i>
                               </button>
-                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete{{$producto->id}}">
-                                Eliminar
+                            <button type="button" class="eliminar" data-toggle="modal" data-target="#delete{{$producto->id}}">
+                                <i class="fas fa-trash"></i>
                               </button>
                         </td>
                     </tr>

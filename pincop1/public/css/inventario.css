@@ -37,3 +37,87 @@ h1 {
 tr{
 	text-align: center ;
 }
+.cabezera{
+	background-color: #9a1212;
+	color: #fff;
+}
+.eliminar {
+	background-color: #b82c2c;
+	color: white;
+	border: none;
+	padding: 9px 18px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+  
+.eliminar:hover {
+	background-color: #d32f2f;
+}
+.editar {
+	background-color: #f55000;
+	color: white;
+	border: none;
+	padding: 9px 18px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+  
+.editar:hover {
+	background-color: #F57C00;
+}
+.nuevo {
+	background-color: #007000;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 4px;
+  }
+  
+  .nuevo:hover {
+	background-color: #0c810c;
+  }
+  .pdf {
+	background-color: #dc3545;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 4px;
+  }
+  
+  .pdf:hover {
+	background-color: #c82333;
+  }
+  
+  .pdf i {
+	margin-right: 5px;
+  }
+  
+  .pdf:visited {
+	color: white;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
