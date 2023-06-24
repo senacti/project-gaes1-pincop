@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Producto;
 use Illuminate\Http\Request;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class ProductoController extends Controller
 {
@@ -14,6 +15,13 @@ class ProductoController extends Controller
     {
         $productos=Producto::all();
         return view('producto.indexi', compact('productos'));
+    }
+
+    public function pdf()
+    {
+        $productos=Producto::all();
+        $pdf = Pdf::loadView('producto.pdf', compact('productos'));
+        return $pdf->stream();  
     }
 
     /**

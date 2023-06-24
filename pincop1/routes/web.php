@@ -57,5 +57,7 @@ Route::get('/500d', function () {
 
 Auth::routes();
 
+Route::get('inventario/pdf', [ProductoController::class, 'pdf'])->name('inventario.pdf');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('inventario', ProductoController::class);
+
