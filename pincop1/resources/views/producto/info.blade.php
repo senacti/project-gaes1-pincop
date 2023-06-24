@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="{{ asset('css/inventario.css') }}">  
   <!-- Modal -->
   <div class="modal fade" id="edit{{$producto->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -49,8 +50,8 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          <button type="submit" class="btn btn-primary">Guardar</button>
+          <button type="button" class="eliminar" data-dismiss="modal">Cancelar</button>
+          <button type="submit" class="nuevo">Guardar</button>
         </div>
     </form>
       </div>
@@ -85,8 +86,8 @@
                 Estás seguro de eliminar a <strong> {{$producto->nombre}} ?</strong>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-              <button type="submit" class="btn btn-primary">Confirmar</button>
+              <button type="button" class="eliminar" data-dismiss="modal">Cancelar</button>
+              <button type="submit" class="nuevo">Confirmar</button>
             </div>
         </form>
           </div>
