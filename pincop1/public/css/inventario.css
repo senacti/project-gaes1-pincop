@@ -74,21 +74,21 @@ tr{
 	background-color: #F57C00;
 }
 .nuevo {
-	background-color: #007000;
-	color: white;
-	border: none;
-	padding: 10px 20px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	cursor: pointer;
-	border-radius: 4px;
-  }
-  
-  .nuevo:hover {
-	background-color: #0c810c;
-  }
+  background-color: #1d914d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.nuevo:hover {
+  background-color: #1b6d3d;
+}
   .pdf {
 	background-color: #dc3545;
 	color: white;

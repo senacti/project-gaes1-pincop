@@ -11,28 +11,51 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-    <style>
-        body {
-	font-family: 'Noto Sans', sans-serif;
-    }
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
 
-        .cabecera{
+  h2 {
+    font-size: 24px;
+    width: 10px;   
+    height: 10px;
+  }
+
+  h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+
+  th, td {
+    padding: 8px;
+	text-align: center ;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .cabecera th {
     background-color: #9a1212;
     color: white;
-    }
+    font-weight: bold;
+  }
 
-        tr{
-	text-align: center ;
-    }
-    h1 {
-	color: #000000;
-    text-align: center ;
-    }
-    h2{
-        width: 10px;   
-        height: 10px;
-    }
-    </style>
+  .bg-light {
+    background-color: #f8f9fa;
+  }
+
+  .text-black {
+    color: #333;
+  }
+</style>
+
 </head>
 
 <body>
