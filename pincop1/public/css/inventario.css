@@ -104,15 +104,9 @@ tr{
   
   .pdf:hover {
 	background-color: #c82333;
+	color: #fff;
   }
   
-  .pdf i {
-	margin-right: 5px;
-  }
-  
-  .pdf:visited {
-	color: white;
-  }
   
   
   
