@@ -25,6 +25,7 @@ body {
 .logo:hover {
 	color: #9a1212;
 	text-decoration: none;
+	color: #fff;
 }
 h1 {
 	color: #f9f9f9;
