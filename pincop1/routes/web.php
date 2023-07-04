@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\ClienteController;
 
 
 Route::get('/', function () {
@@ -22,6 +23,10 @@ Route::get('/recuperar', function () {
 
 Route::get('/inventario', function () {
     return view ('inventario');
+});
+
+Route::get('/cliente', function () {
+    return view ('cliente');
 });
 
 Route::get('/hombre', function () {
@@ -61,3 +66,4 @@ Auth::routes();
 Route::get('inventario/pdf', [ProductoController::class, 'pdf'])->name('inventario.pdf');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('inventario', ProductoController::class);
+Route::resource('cliente', ClienteController::class);

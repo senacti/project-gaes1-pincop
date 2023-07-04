@@ -20,7 +20,7 @@
             <a href="{{url('/404d')}}"><li><i class="fa-sharp fa-solid fa-bars icon"></i>&nbsp; <span>Menu</span></li></a>
             <a href="{{url('/inventario')}}"><li><i class="fa-solid fa-pager icon"></i>&nbsp; <span>Inventario</span></li></a>
             <a href="{{url('/404d')}}"><li><i class="fa-solid fa-chart-line icon"></i>&nbsp; <span>Marketing</span></li></a>
-            <a href="{{url('/404d')}}"><li><i class="fa-solid fa-truck-fast"></i>&nbsp; <span>Pedidos</span></li></a>
+            <a href="{{url('/cliente')}}"><li><i class="fa-solid fa-truck-fast"></i>&nbsp; <span>Pedidos</span></li></a>
             <a href="{{url('/404d')}}"><li><i class="fa-solid fa-sack-dollar"></i>&nbsp; <span>Ventas</span></li></a>
             <a href="{{url('/404d')}}"><li><i class="fa-solid fa-user icon"></i>&nbsp; <span>Usuarios</span></li></a>
             <a href="{{url('/404d')}}"><li><i class="fa-solid fa-gear icon"></i>&nbsp; <span>Ajustes</span></li></a>
