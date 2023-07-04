@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\MarketingController;
+use App\Http\Controllers\VentaController;
 
 
 Route::get('/', function () {
@@ -32,6 +33,10 @@ Route::get('/cliente', function () {
 
 Route::get('/marketing', function () {
     return view ('marketing');
+});
+
+Route::get('/venta', function () {
+    return view ('venta');
 });
 
 Route::get('/hombre', function () {
@@ -71,7 +76,9 @@ Auth::routes();
 Route::get('inventario/pdf', [ProductoController::class, 'pdf'])->name('inventario.pdf');
 Route::get('cliente/pdf', [ClienteController::class, 'pdf'])->name('cliente.pdf');
 Route::get('marketing/pdf', [MarketingController::class, 'pdf'])->name('marketing.pdf');
+Route::get('venta/pdf', [VentaController::class, 'pdf'])->name('venta.pdf');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('inventario', ProductoController::class);
 Route::resource('cliente', ClienteController::class);
 Route::resource('marketing', MarketingController::class);
+Route::resource('venta', VentaController::class);
