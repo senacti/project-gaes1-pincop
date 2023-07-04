@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductoController;
 
+
 Route::get('/', function () {
     return view ('Index');
 });
@@ -60,4 +61,3 @@ Auth::routes();
 Route::get('inventario/pdf', [ProductoController::class, 'pdf'])->name('inventario.pdf');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('inventario', ProductoController::class);
-
