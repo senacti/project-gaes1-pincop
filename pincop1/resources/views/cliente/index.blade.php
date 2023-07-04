@@ -19,6 +19,9 @@
         <button type="button" class="nuevo" data-toggle="modal" data-target="#create">
             <i class="fas fa-plus"></i> NUEVO
          </button>
+         <a href="{{route('inventario.pdf')}}" class="pdf" target="_blank">
+            <i class="fas fa-file-pdf"></i> PDF
+          </a>  
          
 
         <div class="table-responsive">
