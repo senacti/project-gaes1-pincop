@@ -33,6 +33,8 @@
                         <th scope="col">NOMBRE </th>
                         <th scope="col">TELEFONO</th>
                         <th scope="col">CORREO</th>
+                        <th scope="col">DIRECCIÓN</th>
+                        <th scope="col">ESTADO</th>
                         <th>ACCIONES</th>
                     </tr>
                 </thead>
@@ -46,6 +48,8 @@
                         <td>{{$cliente->nombre}}</td>
                         <td>{{$cliente->telefono}}</td>
                         <td>{{$cliente->correo}}</td>
+                        <td>{{$cliente->direccion}}</td>
+                        <td>{{$cliente->estado}}</td>
                         <td>
                         <button type="button" class="editar" data-toggle="modal" data-target="#edit{{$cliente->id}}">
                             <i class="fas fa-edit"></i>

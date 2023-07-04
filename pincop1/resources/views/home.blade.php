@@ -106,7 +106,7 @@
              <div class="nuevo-pedido">
                 <div class="title">
                     <b>Pedidos Recientes</b>
-                    <a href="{{url('/404d')}}" class="btn">Ver Todos</a>
+                    <a href="{{url('/cliente')}}" class="btn">Ver Todos</a>
              </div>
              <table>
                 <tr>

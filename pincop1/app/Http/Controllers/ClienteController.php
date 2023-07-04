@@ -22,8 +22,8 @@ class ClienteController extends Controller
 
     public function pdf()
     {
-        $productos=Producto::all();
-        $pdf = Pdf::loadView('producto.pdf', compact('productos'));
+        $clientes=Cliente::all();
+        $pdf = Pdf::loadView('cliente.pdf', compact('clientes'));
         return $pdf->stream();  
     }
 
@@ -44,6 +44,8 @@ class ClienteController extends Controller
       $clientes->nombre=$request->input('nombre');
       $clientes->telefono=$request->input('telefono');
       $clientes->correo=$request->input('correo');
+      $clientes->direccion=$request->input('direccion');
+      $clientes->estado=$request->input('estado');
       $clientes->save();
       return redirect()->back(); 
          //
@@ -75,6 +77,8 @@ class ClienteController extends Controller
        $clientes->nombre=$request->input('nombre');
        $clientes->telefono=$request->input('telefono');
        $clientes->correo=$request->input('correo');
+       $clientes->direccion=$request->input('direccion');
+       $clientes->estado=$request->input('estado');
        $clientes->update();
        return redirect()->back(); 
           //

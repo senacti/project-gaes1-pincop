@@ -70,6 +70,8 @@
                 <th scope="col">NOMBRE </th>
                 <th scope="col">TELEFONO</th>
                 <th scope="col">CORREO</th>
+                <th scope="col">DIRECCIÓN</th>
+                <th scope="col">ESTADO</th>
             </tr>
         </thead>
         <tbody>
@@ -79,6 +81,8 @@
                 <td>{{$cliente->nombre}}</td>
                 <td>{{$cliente->telefono}}</td>
                 <td>{{$cliente->correo}}</td>
+                <td>{{$cliente->direccion}}</td>
+                <td>{{$cliente->estado}}</td>
             </tr>
             @include('cliente.info')
             @endforeach
