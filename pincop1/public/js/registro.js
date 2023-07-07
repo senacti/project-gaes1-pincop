@@ -52,7 +52,7 @@ function validarEmail(email) {
   if (email.value.trim() === '') {
     mostrarError(email, 'El email es requerido');
     return false;
-  } else if (!/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(email.value.trim())) {
+  } else if (!/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.(com|es|co|org|net)$/i.test(email.value.trim())) {
     mostrarError(email, 'El email es inválido');
     return false;
   } else {
@@ -61,12 +61,22 @@ function validarEmail(email) {
   }
 }
 
+
 function validarPassword(password) {
   if (password.value.trim() === '') {
     mostrarError(password, 'La contraseña es requerida');
     return false;
   } else if (!/^.{8,12}$/.test(password.value.trim())) {
     mostrarError(password, 'La contraseña debe tener entre 8 y 12 caracteres');
+    return false;
+  } else if (!/[A-Z]/.test(password.value)) {
+    mostrarError(password, 'La contraseña debe contener al menos 1 letra mayúscula');
+    return false;
+  } else if (!/\d/.test(password.value)) {
+    mostrarError(password, 'La contraseña debe contener al menos 1 número');
+    return false;
+  } else if (!/[^a-zA-Z0-9]/.test(password.value)) {
+    mostrarError(password, 'La contraseña debe contener al menos 1 carácter especial');
     return false;
   } else {
     mostrarExito(password);
