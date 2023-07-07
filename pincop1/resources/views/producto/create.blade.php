@@ -19,8 +19,14 @@
           </div>
           <div class="mb-3">
             <label for="" class="form-label">Marca</label>
-            <input type="text"
-              class="form-control" name="marca" id="" aria-describedby="helpId" placeholder="">
+            <select class="form-control" name="marca" id="" aria-describedby="helpId">
+              <option value="Nike">Nike</option>
+              <option value="Adidas">Adidas</option>
+              <option value="Puma">Puma</option>
+              <option value="Reebook">Reebook</option>
+              <option value="Converse">Converse</option>
+              <option value="Vans">Vans</option>
+            </select>
           </div>
           <div class="mb-3">
             <label for="" class="form-label">Talla</label>
@@ -33,10 +39,13 @@
               class="form-control" name="cantidad" id="" aria-describedby="helpId" placeholder="">
           </div>
           <div class="mb-3">
-            <label for="" class="form-label">Categoria</label>
-            <input type="text"
-              class="form-control" name="categoria" id="" aria-describedby="helpId" placeholder="">
-          </div>
+            <label for="" class="form-label">Categoría</label>
+            <select class="form-control" name="categoria" id="" aria-describedby="helpId">
+              <option value="Hombre">Hombre</option>
+              <option value="Mujer">Mujer</option>
+              <option value="Niño">Niño</option>
+            </select>
+          </div>          
           <div class="mb-3">
             <label for="" class="form-label">Descripción</label>
             <input type="text"
